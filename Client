@@ -18,6 +18,11 @@ local Speed = Instance.new("TextButton")
 local SpeedBox = Instance.new("TextBox")
 local HelpGui = Instance.new("TextLabel")
 local LoudSound = Instance.new("TextButton")
+local FlingList = Instance.new("Frame")
+local Yeet3 = Instance.new("TextButton")
+local Yeet4 = Instance.new("TextButton")
+local Yeet2 = Instance.new("TextButton")
+local Close_2 = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
 
 --Properties:
@@ -25,13 +30,14 @@ local Open = Instance.new("TextButton")
 Haxx.Name = "Haxx"
 Haxx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Haxx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Haxx.ResetOnSpawn = false
 
 Frame.Parent = Haxx
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BackgroundTransparency = 0.300
 Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Frame.Position = UDim2.new(0, 0, 0.343936384, 0)
-Frame.Size = UDim2.new(0, 662, 0, 330)
+Frame.Position = UDim2.new(0, 0, 0.30417496, 0)
+Frame.Size = UDim2.new(0, 662, 0, 350)
 
 FlingHax.Name = "FlingHax"
 FlingHax.Parent = Frame
@@ -208,7 +214,7 @@ LoudSound.Parent = Frame
 LoudSound.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 LoudSound.BackgroundTransparency = 0.400
 LoudSound.BorderColor3 = Color3.fromRGB(255, 255, 255)
-LoudSound.Position = UDim2.new(0.0164026022, 0, 0.847868264, 0)
+LoudSound.Position = UDim2.new(0.0164026022, 0, 0.836439729, 0)
 LoudSound.Size = UDim2.new(0, 200, 0, 50)
 LoudSound.Font = Enum.Font.SourceSans
 LoudSound.Text = "Loud Music"
@@ -216,6 +222,70 @@ LoudSound.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoudSound.TextScaled = true
 LoudSound.TextSize = 14.000
 LoudSound.TextWrapped = true
+
+FlingList.Name = "FlingList"
+FlingList.Parent = Frame
+FlingList.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FlingList.BackgroundTransparency = 0.400
+FlingList.Position = UDim2.new(0, 0, -0.402857155, 0)
+FlingList.Size = UDim2.new(0, 662, 0, 133)
+FlingList.Visible = false
+
+Yeet3.Name = "Yeet3"
+Yeet3.Parent = FlingList
+Yeet3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Yeet3.BackgroundTransparency = 0.400
+Yeet3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Yeet3.Position = UDim2.new(0.0151057523, 0, 0.503759384, 0)
+Yeet3.Size = UDim2.new(0, 200, 0, 38)
+Yeet3.Font = Enum.Font.SourceSans
+Yeet3.Text = "Yeet Gui V3"
+Yeet3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yeet3.TextScaled = true
+Yeet3.TextSize = 14.000
+Yeet3.TextWrapped = true
+
+Yeet4.Name = "Yeet4"
+Yeet4.Parent = FlingList
+Yeet4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Yeet4.BackgroundTransparency = 0.400
+Yeet4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Yeet4.Position = UDim2.new(0.35649547, 0, 0.0676691756, 0)
+Yeet4.Size = UDim2.new(0, 200, 0, 38)
+Yeet4.Font = Enum.Font.SourceSans
+Yeet4.Text = "Yeet Gui V4"
+Yeet4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yeet4.TextScaled = true
+Yeet4.TextSize = 14.000
+Yeet4.TextWrapped = true
+
+Yeet2.Name = "Yeet2"
+Yeet2.Parent = FlingList
+Yeet2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Yeet2.BackgroundTransparency = 0.400
+Yeet2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Yeet2.Position = UDim2.new(0.0151057402, 0, 0.0676691756, 0)
+Yeet2.Size = UDim2.new(0, 200, 0, 38)
+Yeet2.Font = Enum.Font.SourceSans
+Yeet2.Text = "Yeet Gui V2"
+Yeet2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Yeet2.TextScaled = true
+Yeet2.TextSize = 14.000
+Yeet2.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = FlingList
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BackgroundTransparency = 1.000
+Close_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.Position = UDim2.new(0.956489444, 0, -0.00225564092, 0)
+Close_2.Size = UDim2.new(0, 27, 0, 32)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
 
 Open.Name = "Open"
 Open.Parent = Haxx
@@ -234,34 +304,35 @@ Open.TextWrapped = true
 
 -- Scripts:
 
-local function ROYSXD_fake_script() -- FlingHax.LocalScript 
+local function WRRKKO_fake_script() -- FlingHax.LocalScript 
 	local script = Instance.new('LocalScript', FlingHax)
 
+	local Button = script.Parent
+	local List = script.Parent.Parent.FlingList
+	
+	Button.MouseButton1Click:Connect(function()
+		List.Visible = true
+	end)
+end
+coroutine.wrap(WRRKKO_fake_script)()
+local function ZOYEKU_fake_script() -- FlingHax.LocalScript 
+	local script = Instance.new('LocalScript', FlingHax)
+
+	local Button = script.Parent.Parent
 	local Help = script.Parent.Parent.HelpGui
-	local RB = script.Parent
 	
-	RB.MouseEnter:Connect(function()
+	Button.MouseEnter:Connect(function()
 		Help.Visible = true
-		Help.Text = "You Can Fling People"
+		Help.Text = "If You Click FlingList Will Open"
 	end)
 	
-	RB.MouseLeave:Connect(function()
-	   Help.Visible = false
-	   Help.Text = ""	
+	Button.MouseLeave:Connect(function()
+		Help.Visible = false
+		Help.Text = ""
 	end)
 end
-coroutine.wrap(ROYSXD_fake_script)()
-local function PWOOX_fake_script() -- FlingHax.LocalScript 
-	local script = Instance.new('LocalScript', FlingHax)
-
-	yeet = 'https://raw.githubusercontent.com/ibrahimtahaxd/Fe-Fling-Gui/main/Fe'
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(yeet))()
-	end)
-end
-coroutine.wrap(PWOOX_fake_script)()
-local function GEEHHX_fake_script() -- RemoveBarriers.Remove 
+coroutine.wrap(ZOYEKU_fake_script)()
+local function ZASXBA_fake_script() -- RemoveBarriers.Remove 
 	local script = Instance.new('Script', RemoveBarriers)
 
 	-- Works For 'AGirlJennifer's Place'
@@ -275,8 +346,8 @@ local function GEEHHX_fake_script() -- RemoveBarriers.Remove
 	script.Disabled = true
 	end) 
 end
-coroutine.wrap(GEEHHX_fake_script)()
-local function YSSD_fake_script() -- RemoveBarriers.AlreadyCleared 
+coroutine.wrap(ZASXBA_fake_script)()
+local function WHZNZV_fake_script() -- RemoveBarriers.AlreadyCleared 
 	local script = Instance.new('LocalScript', RemoveBarriers)
 
 	script.Disabled = true
@@ -286,8 +357,8 @@ local function YSSD_fake_script() -- RemoveBarriers.AlreadyCleared
 		script.Parent.Text = "Remove Barriers"
 	end)
 end
-coroutine.wrap(YSSD_fake_script)()
-local function MMOXOZ_fake_script() -- RemoveBarriers.Remove2 
+coroutine.wrap(WHZNZV_fake_script)()
+local function VAGFGOY_fake_script() -- RemoveBarriers.Remove2 
 	local script = Instance.new('Script', RemoveBarriers)
 
 	-- Works For 'AGirlJennifer's Place'
@@ -298,8 +369,8 @@ local function MMOXOZ_fake_script() -- RemoveBarriers.Remove2
 	   end
 	end) 
 end
-coroutine.wrap(MMOXOZ_fake_script)()
-local function NIAHUHF_fake_script() -- RemoveBarriers.LocalScript 
+coroutine.wrap(VAGFGOY_fake_script)()
+local function SBNRSOA_fake_script() -- RemoveBarriers.LocalScript 
 	local script = Instance.new('LocalScript', RemoveBarriers)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -315,8 +386,8 @@ local function NIAHUHF_fake_script() -- RemoveBarriers.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(NIAHUHF_fake_script)()
-local function XZSD_fake_script() -- GameName.LocalScript 
+coroutine.wrap(SBNRSOA_fake_script)()
+local function GBMPTL_fake_script() -- GameName.LocalScript 
 	local script = Instance.new('LocalScript', GameName)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -332,24 +403,24 @@ local function XZSD_fake_script() -- GameName.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(XZSD_fake_script)()
-local function IAYCV_fake_script() -- Frame.Draggable 
+coroutine.wrap(GBMPTL_fake_script)()
+local function TUEB_fake_script() -- Frame.Draggable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local frame = script.Parent
 	frame.Draggable = true
 	frame.Active = true
 end
-coroutine.wrap(IAYCV_fake_script)()
-local function LLIMXEH_fake_script() -- AntiFling.LocalScript 
+coroutine.wrap(TUEB_fake_script)()
+local function YDOW_fake_script() -- AntiFling.LocalScript 
 	local script = Instance.new('LocalScript', AntiFling)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ibrahimtahaxd/Anti-Fling/main/FE"))()
 	end)
 end
-coroutine.wrap(LLIMXEH_fake_script)()
-local function RIKW_fake_script() -- AntiFling.LocalScript 
+coroutine.wrap(YDOW_fake_script)()
+local function MFNO_fake_script() -- AntiFling.LocalScript 
 	local script = Instance.new('LocalScript', AntiFling)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -365,8 +436,8 @@ local function RIKW_fake_script() -- AntiFling.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(RIKW_fake_script)()
-local function GVZHNYX_fake_script() -- By.LocalScript 
+coroutine.wrap(MFNO_fake_script)()
+local function BGFZX_fake_script() -- By.LocalScript 
 	local script = Instance.new('LocalScript', By)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -379,8 +450,8 @@ local function GVZHNYX_fake_script() -- By.LocalScript
 		script.Parent.Parent.HelpGui.Text = ""
 	end)
 end
-coroutine.wrap(GVZHNYX_fake_script)()
-local function IBEAZOU_fake_script() -- Close.LocalScript 
+coroutine.wrap(BGFZX_fake_script)()
+local function ELZO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -393,16 +464,16 @@ local function IBEAZOU_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(IBEAZOU_fake_script)()
-local function NIGFYW_fake_script() -- nfiniteYield.LocalScript 
+coroutine.wrap(ELZO_fake_script)()
+local function BIHB_fake_script() -- nfiniteYield.LocalScript 
 	local script = Instance.new('LocalScript', nfiniteYield)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 	end)
 end
-coroutine.wrap(NIGFYW_fake_script)()
-local function LUJOLSQ_fake_script() -- nfiniteYield.LocalScript 
+coroutine.wrap(BIHB_fake_script)()
+local function RLOIX_fake_script() -- nfiniteYield.LocalScript 
 	local script = Instance.new('LocalScript', nfiniteYield)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -418,8 +489,8 @@ local function LUJOLSQ_fake_script() -- nfiniteYield.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(LUJOLSQ_fake_script)()
-local function YOZPU_fake_script() -- ChatSpy.LocalScript 
+coroutine.wrap(RLOIX_fake_script)()
+local function HDBT_fake_script() -- ChatSpy.LocalScript 
 	local script = Instance.new('LocalScript', ChatSpy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -489,8 +560,8 @@ local function YOZPU_fake_script() -- ChatSpy.LocalScript
 	script.Parent.Text = "Chat Spy"
 	end)
 end
-coroutine.wrap(YOZPU_fake_script)()
-local function WFOT_fake_script() -- ChatSpy.LocalScript 
+coroutine.wrap(HDBT_fake_script)()
+local function HGENOX_fake_script() -- ChatSpy.LocalScript 
 	local script = Instance.new('LocalScript', ChatSpy)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -506,8 +577,8 @@ local function WFOT_fake_script() -- ChatSpy.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(WFOT_fake_script)()
-local function HZUBBS_fake_script() -- ChatHax.LocalScript 
+coroutine.wrap(HGENOX_fake_script)()
+local function KBNDAX_fake_script() -- ChatHax.LocalScript 
 	local script = Instance.new('LocalScript', ChatHax)
 
 	lol = "https://raw.githubusercontent.com/ibrahimtahaxd/Chat-Hax/main/FE"
@@ -516,8 +587,8 @@ local function HZUBBS_fake_script() -- ChatHax.LocalScript
 		loadstring(game:HttpGet(lol))()
 	end)
 end
-coroutine.wrap(HZUBBS_fake_script)()
-local function MRVOYM_fake_script() -- ChatHax.LocalScript 
+coroutine.wrap(KBNDAX_fake_script)()
+local function QRBMSL_fake_script() -- ChatHax.LocalScript 
 	local script = Instance.new('LocalScript', ChatHax)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -533,8 +604,8 @@ local function MRVOYM_fake_script() -- ChatHax.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(MRVOYM_fake_script)()
-local function EEMARD_fake_script() -- Speed.SetSpeed 
+coroutine.wrap(QRBMSL_fake_script)()
+local function OQDKQHR_fake_script() -- Speed.SetSpeed 
 	local script = Instance.new('LocalScript', Speed)
 
 	local SpeedButton = script.Parent
@@ -564,8 +635,8 @@ local function EEMARD_fake_script() -- Speed.SetSpeed
 		Help.Text = ""
 	end)
 end
-coroutine.wrap(EEMARD_fake_script)()
-local function QIRGBS_fake_script() -- SpeedBox.LocalScript 
+coroutine.wrap(OQDKQHR_fake_script)()
+local function OEJBB_fake_script() -- SpeedBox.LocalScript 
 	local script = Instance.new('LocalScript', SpeedBox)
 
 	local SpeedBox = script.Parent
@@ -582,16 +653,16 @@ local function QIRGBS_fake_script() -- SpeedBox.LocalScript
 		Help.Text = ""
 	end)
 end
-coroutine.wrap(QIRGBS_fake_script)()
-local function JRDG_fake_script() -- LoudSound.Script 
+coroutine.wrap(OEJBB_fake_script)()
+local function QIMPRVO_fake_script() -- LoudSound.Script 
 	local script = Instance.new('Script', LoudSound)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Workspace.HDAdminSound.Volume = "10"
 	end)
 end
-coroutine.wrap(JRDG_fake_script)()
-local function YZMUEGB_fake_script() -- LoudSound.LocalScript 
+coroutine.wrap(QIMPRVO_fake_script)()
+local function VRODL_fake_script() -- LoudSound.LocalScript 
 	local script = Instance.new('LocalScript', LoudSound)
 
 	local Help = script.Parent.Parent.HelpGui
@@ -607,4 +678,93 @@ local function YZMUEGB_fake_script() -- LoudSound.LocalScript
 	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(YZMUEGB_fake_script)()
+coroutine.wrap(VRODL_fake_script)()
+local function QKXJ_fake_script() -- Yeet3.LocalScript 
+	local script = Instance.new('LocalScript', Yeet3)
+
+	local Help = script.Parent.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Yeet Gui V3 Fling Gui"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(QKXJ_fake_script)()
+local function OHBTR_fake_script() -- Yeet3.LocalScript 
+	local script = Instance.new('LocalScript', Yeet3)
+
+	yeet = 'https://raw.githubusercontent.com/ibrahimtahaxd/Fe-Fling-Gui/main/Fe'
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(yeet))()
+	end)
+end
+coroutine.wrap(OHBTR_fake_script)()
+local function WNXZTB_fake_script() -- Yeet4.LocalScript 
+	local script = Instance.new('LocalScript', Yeet4)
+
+	yeet = 'https://raw.githubusercontent.com/ibrahimtahaxd/Yeet-Gui-V4/main/Fe'
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(yeet))()
+	end)
+end
+coroutine.wrap(WNXZTB_fake_script)()
+local function IEECM_fake_script() -- Yeet4.LocalScript 
+	local script = Instance.new('LocalScript', Yeet4)
+
+	local Help = script.Parent.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Yeet Gui V4 Fling Gui"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(IEECM_fake_script)()
+local function MKBEF_fake_script() -- Yeet2.LocalScript 
+	local script = Instance.new('LocalScript', Yeet2)
+
+	local Help = script.Parent.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Yeet Gui V2 Fling Gui"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(MKBEF_fake_script)()
+local function FUSEHHZ_fake_script() -- Yeet2.LocalScript 
+	local script = Instance.new('LocalScript', Yeet2)
+
+	yeet = 'https://raw.githubusercontent.com/ibrahimtahaxd/Yeet-Gui-V1/main/FE'
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(yeet))()
+	end)
+end
+coroutine.wrap(FUSEHHZ_fake_script)()
+local function YHFVD_fake_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(YHFVD_fake_script)()
