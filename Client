@@ -1,0 +1,338 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Haxx = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local FlingHax = Instance.new("TextButton")
+local RemoveBarriers = Instance.new("TextButton")
+local GameName = Instance.new("TextLabel")
+local AntiFling = Instance.new("TextButton")
+local By = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local nfiniteYield = Instance.new("TextButton")
+local ChatSpy = Instance.new("TextButton")
+local ChatHax = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+Haxx.Name = "Haxx"
+Haxx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Haxx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Haxx
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.300
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0, 0, 0.328031808, 0)
+Frame.Size = UDim2.new(0, 662, 0, 338)
+
+FlingHax.Name = "FlingHax"
+FlingHax.Parent = Frame
+FlingHax.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FlingHax.BackgroundTransparency = 0.400
+FlingHax.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FlingHax.Position = UDim2.new(0.0164025985, 0, 0.241617367, 0)
+FlingHax.Size = UDim2.new(0, 200, 0, 50)
+FlingHax.Font = Enum.Font.SourceSans
+FlingHax.Text = "FE Fling Hax"
+FlingHax.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlingHax.TextScaled = true
+FlingHax.TextSize = 14.000
+FlingHax.TextWrapped = true
+
+RemoveBarriers.Name = "RemoveBarriers"
+RemoveBarriers.Parent = Frame
+RemoveBarriers.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RemoveBarriers.BackgroundTransparency = 0.400
+RemoveBarriers.BorderColor3 = Color3.fromRGB(255, 255, 255)
+RemoveBarriers.Position = UDim2.new(0.0164025985, 0, 0.433809817, 0)
+RemoveBarriers.Size = UDim2.new(0, 200, 0, 50)
+RemoveBarriers.Font = Enum.Font.SourceSans
+RemoveBarriers.Text = "Remove Barriers"
+RemoveBarriers.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveBarriers.TextScaled = true
+RemoveBarriers.TextSize = 14.000
+RemoveBarriers.TextWrapped = true
+
+GameName.Name = "GameName"
+GameName.Parent = Frame
+GameName.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GameName.BackgroundTransparency = 0.400
+GameName.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GameName.Position = UDim2.new(0.0704669803, 0, 0.04838714, 0)
+GameName.Size = UDim2.new(0, 567, 0, 51)
+GameName.Font = Enum.Font.SourceSans
+GameName.Text = "AGirlJennifer's Place Haxx"
+GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameName.TextScaled = true
+GameName.TextSize = 14.000
+GameName.TextWrapped = true
+
+AntiFling.Name = "AntiFling"
+AntiFling.Parent = Frame
+AntiFling.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AntiFling.BackgroundTransparency = 0.400
+AntiFling.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AntiFling.Position = UDim2.new(0.357019871, 0, 0.241617367, 0)
+AntiFling.Size = UDim2.new(0, 200, 0, 50)
+AntiFling.Font = Enum.Font.SourceSans
+AntiFling.Text = "Anti Fling"
+AntiFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiFling.TextScaled = true
+AntiFling.TextSize = 14.000
+AntiFling.TextWrapped = true
+
+By.Name = "By"
+By.Parent = Frame
+By.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+By.BackgroundTransparency = 0.400
+By.BorderColor3 = Color3.fromRGB(255, 255, 255)
+By.Position = UDim2.new(0.0152437277, 0, 0.658661902, 0)
+By.Size = UDim2.new(0, 200, 0, 50)
+By.Font = Enum.Font.SourceSans
+By.Text = "By  Tester666x666 Enjoy!!"
+By.TextColor3 = Color3.fromRGB(255, 255, 255)
+By.TextScaled = true
+By.TextSize = 14.000
+By.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.957753301, 0, 0, 0)
+Close.Size = UDim2.new(0, 27, 0, 32)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+nfiniteYield.Name = "İnfiniteYield"
+nfiniteYield.Parent = Frame
+nfiniteYield.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+nfiniteYield.BackgroundTransparency = 0.400
+nfiniteYield.BorderColor3 = Color3.fromRGB(255, 255, 255)
+nfiniteYield.Position = UDim2.new(0.357019871, 0, 0.433809817, 0)
+nfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+nfiniteYield.Font = Enum.Font.SourceSans
+nfiniteYield.Text = "Infinite Yield Admin"
+nfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+nfiniteYield.TextScaled = true
+nfiniteYield.TextSize = 14.000
+nfiniteYield.TextWrapped = true
+
+ChatSpy.Name = "ChatSpy"
+ChatSpy.Parent = Frame
+ChatSpy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChatSpy.BackgroundTransparency = 0.400
+ChatSpy.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpy.Position = UDim2.new(0.681055188, 0, 0.241617367, 0)
+ChatSpy.Size = UDim2.new(0, 200, 0, 50)
+ChatSpy.Font = Enum.Font.SourceSans
+ChatSpy.Text = "Chat Spy"
+ChatSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpy.TextScaled = true
+ChatSpy.TextSize = 14.000
+ChatSpy.TextWrapped = true
+
+ChatHax.Name = "ChatHax"
+ChatHax.Parent = Frame
+ChatHax.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ChatHax.BackgroundTransparency = 0.400
+ChatHax.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ChatHax.Position = UDim2.new(0.680282712, 0, 0.433809817, 0)
+ChatHax.Size = UDim2.new(0, 200, 0, 50)
+ChatHax.Font = Enum.Font.SourceSans
+ChatHax.Text = "Chat Hax"
+ChatHax.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatHax.TextScaled = true
+ChatHax.TextSize = 14.000
+ChatHax.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = Haxx
+Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open.BackgroundTransparency = 0.400
+Open.Position = UDim2.new(0, 0, 0.518886685, 0)
+Open.Size = UDim2.new(0, 142, 0, 50)
+Open.Visible = false
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+-- Scripts:
+
+local function NXJJ_fake_script() -- FlingHax.LocalScript 
+	local script = Instance.new('LocalScript', FlingHax)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ibrahimtahaxd/Fe-Fling-Hax/main/XD"))()
+	end)
+end
+coroutine.wrap(NXJJ_fake_script)()
+local function BEYEKXQ_fake_script() -- RemoveBarriers.Remove 
+	local script = Instance.new('Script', RemoveBarriers)
+
+	-- Works For 'AGirlJennifer's Place'
+	script.Parent.MouseButton1Click:Connect(function()
+	  while true do
+	  wait(0.1)
+		game.Workspace.KillPart1:Destroy()
+	   end
+	script.Parent.AlreadyCleared.Disabled = true
+	wait(1.5)
+	script.Disabled = true
+	end) 
+end
+coroutine.wrap(BEYEKXQ_fake_script)()
+local function IVLTY_fake_script() -- RemoveBarriers.AlreadyCleared 
+	local script = Instance.new('LocalScript', RemoveBarriers)
+
+	script.Disabled = true
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text = "Already Cleared..."
+		wait(1.5)
+		script.Parent.Text = "Remove Barriers"
+	end)
+end
+coroutine.wrap(IVLTY_fake_script)()
+local function XNWU_fake_script() -- RemoveBarriers.Remove2 
+	local script = Instance.new('Script', RemoveBarriers)
+
+	-- Works For 'AGirlJennifer's Place'
+	script.Parent.MouseButton1Click:Connect(function()
+	  while true do
+	  wait(0.1)
+	    game.Workspace.KillPart2:Destroy()
+	   end
+	end) 
+end
+coroutine.wrap(XNWU_fake_script)()
+local function OMENLO_fake_script() -- Frame.Draggable 
+	local script = Instance.new('LocalScript', Frame)
+
+	local frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+end
+coroutine.wrap(OMENLO_fake_script)()
+local function SVJA_fake_script() -- AntiFling.LocalScript 
+	local script = Instance.new('LocalScript', AntiFling)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ibrahimtahaxd/Anti-Fling/main/FE"))()
+	end)
+end
+coroutine.wrap(SVJA_fake_script)()
+local function SWZRPXB_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Open.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+	
+	script.Parent.Parent.Parent.Open.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Open.Visible = false
+		script.Parent.Parent.Parent.Frame.Visible = true
+	end)
+end
+coroutine.wrap(SWZRPXB_fake_script)()
+local function UBETSO_fake_script() -- nfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', nfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(UBETSO_fake_script)()
+local function ZSDDF_fake_script() -- ChatSpy.LocalScript 
+	local script = Instance.new('LocalScript', ChatSpy)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	--This script reveals ALL hidden messages in the default chat
+	script.Parent.Text = "Message /spy To Enable/Disable"
+	enabled = true --chat "/e spy" to toggle!
+	spyOnMyself = true --if true will check your messages too
+	public = false --if true will chat the logs /e spy (fun, risky)
+	publicItalics = true --if true will use /me to stand out
+	privateProperties = { --customize private logs
+		Color = Color3.fromRGB(0,255,255); 
+		Font = Enum.Font.SourceSansBold;
+		TextSize = 18;
+	}
+	
+	
+	local StarterGui = game:GetService("StarterGui")
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+	local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+	local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+	local instance = (_G.chatSpyInstance or 0) + 1
+	_G.chatSpyInstance = instance
+	
+	local function onChatted(p,msg)
+		if _G.chatSpyInstance == instance then
+			if p==player and msg:lower():sub(1,4)=="/spy" then
+				enabled = not enabled
+				wait(0.3)
+				privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+				StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+			elseif enabled and (spyOnMyself==true or p~=player) then
+				msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+				local hidden = true
+				local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+					if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+						hidden = false
+					end
+				end)
+				wait(1)
+				conn:Disconnect()
+				if hidden and enabled then
+					if public then
+						saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+					else
+						privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+						StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+					end
+				end
+			end
+		end
+	end
+	
+	for _,p in ipairs(Players:GetPlayers()) do
+		p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+	end
+	Players.PlayerAdded:Connect(function(p)
+		p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+	end)
+	privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+	StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+	if not player.PlayerGui:FindFirstChild("Chat") then wait(3) end
+	local chatFrame = player.PlayerGui.Chat.Frame
+	chatFrame.ChatChannelParentFrame.Visible = true
+	chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+	wait(5)
+	script.Parent.Text = "Chat Spy"
+	end)
+end
+coroutine.wrap(ZSDDF_fake_script)()
+local function DIITEJ_fake_script() -- ChatHax.LocalScript 
+	local script = Instance.new('LocalScript', ChatHax)
+
+	lol = "https://raw.githubusercontent.com/ibrahimtahaxd/Chat-Hax/main/FE"
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(lol))()
+	end)
+end
+coroutine.wrap(DIITEJ_fake_script)()
