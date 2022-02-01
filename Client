@@ -14,6 +14,9 @@ local Close = Instance.new("TextButton")
 local nfiniteYield = Instance.new("TextButton")
 local ChatSpy = Instance.new("TextButton")
 local ChatHax = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local SpeedBox = Instance.new("TextBox")
+local HelpGui = Instance.new("TextLabel")
 local Open = Instance.new("TextButton")
 
 --Properties:
@@ -21,13 +24,14 @@ local Open = Instance.new("TextButton")
 Haxx.Name = "Haxx"
 Haxx.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Haxx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Haxx.ResetOnSpawn = false
 
 Frame.Parent = Haxx
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BackgroundTransparency = 0.300
 Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Frame.Position = UDim2.new(0, 0, 0.328031808, 0)
-Frame.Size = UDim2.new(0, 662, 0, 338)
+Frame.Position = UDim2.new(0, 0, 0.343936384, 0)
+Frame.Size = UDim2.new(0, 662, 0, 330)
 
 FlingHax.Name = "FlingHax"
 FlingHax.Parent = Frame
@@ -48,7 +52,7 @@ RemoveBarriers.Parent = Frame
 RemoveBarriers.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 RemoveBarriers.BackgroundTransparency = 0.400
 RemoveBarriers.BorderColor3 = Color3.fromRGB(255, 255, 255)
-RemoveBarriers.Position = UDim2.new(0.0164025985, 0, 0.433809817, 0)
+RemoveBarriers.Position = UDim2.new(0.0164025985, 0, 0.42186445, 0)
 RemoveBarriers.Size = UDim2.new(0, 200, 0, 50)
 RemoveBarriers.Font = Enum.Font.SourceSans
 RemoveBarriers.Text = "Remove Barriers"
@@ -62,8 +66,8 @@ GameName.Parent = Frame
 GameName.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 GameName.BackgroundTransparency = 0.400
 GameName.BorderColor3 = Color3.fromRGB(255, 255, 255)
-GameName.Position = UDim2.new(0.0704669803, 0, 0.04838714, 0)
-GameName.Size = UDim2.new(0, 567, 0, 51)
+GameName.Position = UDim2.new(0.0478083678, 0, 0.0483871549, 0)
+GameName.Size = UDim2.new(0, 582, 0, 51)
 GameName.Font = Enum.Font.SourceSans
 GameName.Text = "AGirlJennifer's Place Haxx"
 GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -90,7 +94,7 @@ By.Parent = Frame
 By.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 By.BackgroundTransparency = 0.400
 By.BorderColor3 = Color3.fromRGB(255, 255, 255)
-By.Position = UDim2.new(0.0152437277, 0, 0.658661902, 0)
+By.Position = UDim2.new(0.679896295, 0, 0.618974686, 0)
 By.Size = UDim2.new(0, 200, 0, 50)
 By.Font = Enum.Font.SourceSans
 By.Text = "By  Tester666x666 Enjoy!!"
@@ -118,7 +122,7 @@ nfiniteYield.Parent = Frame
 nfiniteYield.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 nfiniteYield.BackgroundTransparency = 0.400
 nfiniteYield.BorderColor3 = Color3.fromRGB(255, 255, 255)
-nfiniteYield.Position = UDim2.new(0.357019871, 0, 0.433809817, 0)
+nfiniteYield.Position = UDim2.new(0.357019871, 0, 0.42186445, 0)
 nfiniteYield.Size = UDim2.new(0, 200, 0, 50)
 nfiniteYield.Font = Enum.Font.SourceSans
 nfiniteYield.Text = "Infinite Yield Admin"
@@ -146,7 +150,7 @@ ChatHax.Parent = Frame
 ChatHax.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ChatHax.BackgroundTransparency = 0.400
 ChatHax.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ChatHax.Position = UDim2.new(0.680282712, 0, 0.433809817, 0)
+ChatHax.Position = UDim2.new(0.680282712, 0, 0.42186445, 0)
 ChatHax.Size = UDim2.new(0, 200, 0, 50)
 ChatHax.Font = Enum.Font.SourceSans
 ChatHax.Text = "Chat Hax"
@@ -155,10 +159,55 @@ ChatHax.TextScaled = true
 ChatHax.TextSize = 14.000
 ChatHax.TextWrapped = true
 
+Speed.Name = "Speed"
+Speed.Parent = Frame
+Speed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BackgroundTransparency = 0.400
+Speed.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Speed.Position = UDim2.new(0.0164026022, 0, 0.620595574, 0)
+Speed.Size = UDim2.new(0, 200, 0, 50)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Set Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = Frame
+SpeedBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBox.BackgroundTransparency = 0.400
+SpeedBox.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.Position = UDim2.new(0.35649547, 0, 0.620089293, 0)
+SpeedBox.Size = UDim2.new(0, 200, 0, 50)
+SpeedBox.Font = Enum.Font.SourceSans
+SpeedBox.Text = "Enter Here A Number To Set Your Speed"
+SpeedBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.TextScaled = true
+SpeedBox.TextSize = 14.000
+SpeedBox.TextWrapped = true
+
+HelpGui.Name = "HelpGui"
+HelpGui.Parent = Frame
+HelpGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HelpGui.BackgroundTransparency = 0.400
+HelpGui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HelpGui.Position = UDim2.new(1.01963747, 0, 0.241617337, 0)
+HelpGui.Size = UDim2.new(0, 281, 0, 213)
+HelpGui.Visible = false
+HelpGui.Font = Enum.Font.SourceSans
+HelpGui.Text = ""
+HelpGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+HelpGui.TextSize = 30.000
+HelpGui.TextWrapped = true
+HelpGui.TextXAlignment = Enum.TextXAlignment.Left
+HelpGui.TextYAlignment = Enum.TextYAlignment.Top
+
 Open.Name = "Open"
 Open.Parent = Haxx
 Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Open.BackgroundTransparency = 0.400
+Open.BorderColor3 = Color3.fromRGB(255, 255, 255)
 Open.Position = UDim2.new(0, 0, 0.518886685, 0)
 Open.Size = UDim2.new(0, 142, 0, 50)
 Open.Visible = false
@@ -171,15 +220,30 @@ Open.TextWrapped = true
 
 -- Scripts:
 
-local function NXJJ_fake_script() -- FlingHax.LocalScript 
+local function CGGM_fake_script() -- FlingHax.LocalScript 
 	local script = Instance.new('LocalScript', FlingHax)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ibrahimtahaxd/Fe-Fling-Hax/main/XD"))()
+	
+end
+coroutine.wrap(CGGM_fake_script)()
+local function LCBUUT_fake_script() -- FlingHax.LocalScript 
+	local script = Instance.new('LocalScript', FlingHax)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "You Can Fling People"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
 	end)
 end
-coroutine.wrap(NXJJ_fake_script)()
-local function BEYEKXQ_fake_script() -- RemoveBarriers.Remove 
+coroutine.wrap(LCBUUT_fake_script)()
+local function UBLOJ_fake_script() -- RemoveBarriers.Remove 
 	local script = Instance.new('Script', RemoveBarriers)
 
 	-- Works For 'AGirlJennifer's Place'
@@ -193,8 +257,8 @@ local function BEYEKXQ_fake_script() -- RemoveBarriers.Remove
 	script.Disabled = true
 	end) 
 end
-coroutine.wrap(BEYEKXQ_fake_script)()
-local function IVLTY_fake_script() -- RemoveBarriers.AlreadyCleared 
+coroutine.wrap(UBLOJ_fake_script)()
+local function VWGVSEO_fake_script() -- RemoveBarriers.AlreadyCleared 
 	local script = Instance.new('LocalScript', RemoveBarriers)
 
 	script.Disabled = true
@@ -204,8 +268,8 @@ local function IVLTY_fake_script() -- RemoveBarriers.AlreadyCleared
 		script.Parent.Text = "Remove Barriers"
 	end)
 end
-coroutine.wrap(IVLTY_fake_script)()
-local function XNWU_fake_script() -- RemoveBarriers.Remove2 
+coroutine.wrap(VWGVSEO_fake_script)()
+local function NUZSE_fake_script() -- RemoveBarriers.Remove2 
 	local script = Instance.new('Script', RemoveBarriers)
 
 	-- Works For 'AGirlJennifer's Place'
@@ -216,24 +280,89 @@ local function XNWU_fake_script() -- RemoveBarriers.Remove2
 	   end
 	end) 
 end
-coroutine.wrap(XNWU_fake_script)()
-local function OMENLO_fake_script() -- Frame.Draggable 
+coroutine.wrap(NUZSE_fake_script)()
+local function LDTP_fake_script() -- RemoveBarriers.LocalScript 
+	local script = Instance.new('LocalScript', RemoveBarriers)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Is Removes The KillParts"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(LDTP_fake_script)()
+local function NNFWL_fake_script() -- GameName.LocalScript 
+	local script = Instance.new('LocalScript', GameName)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Hack Name And Game Name"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(NNFWL_fake_script)()
+local function VFCD_fake_script() -- Frame.Draggable 
 	local script = Instance.new('LocalScript', Frame)
 
 	local frame = script.Parent
 	frame.Draggable = true
 	frame.Active = true
 end
-coroutine.wrap(OMENLO_fake_script)()
-local function SVJA_fake_script() -- AntiFling.LocalScript 
+coroutine.wrap(VFCD_fake_script)()
+local function YTXHAFG_fake_script() -- AntiFling.LocalScript 
 	local script = Instance.new('LocalScript', AntiFling)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ibrahimtahaxd/Anti-Fling/main/FE"))()
 	end)
 end
-coroutine.wrap(SVJA_fake_script)()
-local function SWZRPXB_fake_script() -- Close.LocalScript 
+coroutine.wrap(YTXHAFG_fake_script)()
+local function ZKMKH_fake_script() -- AntiFling.LocalScript 
+	local script = Instance.new('LocalScript', AntiFling)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Its Anti Fling For Flinging Exploiters"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(ZKMKH_fake_script)()
+local function YDKW_fake_script() -- By.LocalScript 
+	local script = Instance.new('LocalScript', By)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Parent.HelpGui.Visible = true
+		script.Parent.Parent.HelpGui.Text = "This İs The Gui Creator"
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Parent.HelpGui.Visible = false
+		script.Parent.Parent.HelpGui.Text = ""
+	end)
+end
+coroutine.wrap(YDKW_fake_script)()
+local function UFTW_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -246,24 +375,41 @@ local function SWZRPXB_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(SWZRPXB_fake_script)()
-local function UBETSO_fake_script() -- nfiniteYield.LocalScript 
+coroutine.wrap(UFTW_fake_script)()
+local function KBGK_fake_script() -- nfiniteYield.LocalScript 
 	local script = Instance.new('LocalScript', nfiniteYield)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 	end)
 end
-coroutine.wrap(UBETSO_fake_script)()
-local function ZSDDF_fake_script() -- ChatSpy.LocalScript 
+coroutine.wrap(KBGK_fake_script)()
+local function HFCSH_fake_script() -- nfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', nfiniteYield)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Admin Script Cool"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(HFCSH_fake_script)()
+local function YNKSE_fake_script() -- ChatSpy.LocalScript 
 	local script = Instance.new('LocalScript', ChatSpy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 	--This script reveals ALL hidden messages in the default chat
-	script.Parent.Text = "Message /spy To Enable/Disable"
+	script.Parent.Text = "Message /e spy To Close Chat Spy"
 	enabled = true --chat "/e spy" to toggle!
 	spyOnMyself = true --if true will check your messages too
-	public = false --if true will chat the logs /e spy (fun, risky)
+	public = false --if true will chat the logs publicly (fun, risky)
 	publicItalics = true --if true will use /me to stand out
 	privateProperties = { --customize private logs
 		Color = Color3.fromRGB(0,255,255); 
@@ -282,7 +428,7 @@ local function ZSDDF_fake_script() -- ChatSpy.LocalScript
 	
 	local function onChatted(p,msg)
 		if _G.chatSpyInstance == instance then
-			if p==player and msg:lower():sub(1,4)=="/spy" then
+			if p==player and msg:lower():sub(1,4)=="/e spy" then
 				enabled = not enabled
 				wait(0.3)
 				privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
@@ -325,8 +471,25 @@ local function ZSDDF_fake_script() -- ChatSpy.LocalScript
 	script.Parent.Text = "Chat Spy"
 	end)
 end
-coroutine.wrap(ZSDDF_fake_script)()
-local function DIITEJ_fake_script() -- ChatHax.LocalScript 
+coroutine.wrap(YNKSE_fake_script)()
+local function DWVGQ_fake_script() -- ChatSpy.LocalScript 
+	local script = Instance.new('LocalScript', ChatSpy)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "You Can See Private Chatting People"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(DWVGQ_fake_script)()
+local function ORMELBN_fake_script() -- ChatHax.LocalScript 
 	local script = Instance.new('LocalScript', ChatHax)
 
 	lol = "https://raw.githubusercontent.com/ibrahimtahaxd/Chat-Hax/main/FE"
@@ -335,4 +498,70 @@ local function DIITEJ_fake_script() -- ChatHax.LocalScript
 		loadstring(game:HttpGet(lol))()
 	end)
 end
-coroutine.wrap(DIITEJ_fake_script)()
+coroutine.wrap(ORMELBN_fake_script)()
+local function YLSGO_fake_script() -- ChatHax.LocalScript 
+	local script = Instance.new('LocalScript', ChatHax)
+
+	local Help = script.Parent.Parent.HelpGui
+	local RB = script.Parent
+	
+	RB.MouseEnter:Connect(function()
+		Help.Visible = true
+		Help.Text = "Its Chat Hax You Can Troll People"
+	end)
+	
+	RB.MouseLeave:Connect(function()
+	   Help.Visible = false
+	   Help.Text = ""	
+	end)
+end
+coroutine.wrap(YLSGO_fake_script)()
+local function SBLNNEW_fake_script() -- Speed.SetSpeed 
+	local script = Instance.new('LocalScript', Speed)
+
+	local SpeedButton = script.Parent
+	local Help = script.Parent.Parent.HelpGui
+	local SpeedBox = script.Parent.Parent.SpeedBox
+	
+	
+	
+	SpeedButton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ''..SpeedBox.Text..''
+		if SpeedBox.Text == "" then
+			SpeedButton.Text = "Enter Number To Start Speed"
+		end
+		--
+		if SpeedBox.Text == "Enter Here Number To Set Speed" then
+			SpeedButton = "Enter Number To Start Speed"
+		end
+	end)
+	
+	SpeedButton.MouseEnter:Connect(function()
+	    Help.Visible = true	
+		Help.Text = "This İs Sets Speed"
+	end)
+	
+	SpeedButton.MouseLeave:Connect(function()
+		Help.Visible = false
+		Help.Text = ""
+	end)
+end
+coroutine.wrap(SBLNNEW_fake_script)()
+local function WENGN_fake_script() -- SpeedBox.LocalScript 
+	local script = Instance.new('LocalScript', SpeedBox)
+
+	local SpeedBox = script.Parent
+	local SetSpeed = script.Parent.Parent.Speed
+	local Help = script.Parent.Parent.HelpGui
+	
+	SpeedBox.MouseEnter:Connect(function()
+		Help.Visible = true
+	    Help.Text = "Enter Here A Number To Set Your Speed"
+	end)
+	
+	SpeedBox.MouseLeave:Connect(function()
+		Help.Visible = false
+		Help.Text = ""
+	end)
+end
+coroutine.wrap(WENGN_fake_script)()
